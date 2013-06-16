@@ -1,0 +1,12 @@
+# Bundler
+/.bundle/
+/bin/
+/bundle/
+/vendor/gems/
+
+# Berkshelf
+/fixtures/
+Berksfile.lock
+
+# Vagrant
+.vagrant

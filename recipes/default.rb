@@ -21,6 +21,7 @@ ruby_block 'add modules for the temperature sensor' do
   block do
     file = Chef::Util::FileEdit.new('/etc/modules')
     file.insert_line_if_no_match('/w1-gpio/', 'w1-gpio')
+    file.write_file
     file.insert_line_if_no_match('/w1-therm/', 'w1-therm')
     file.write_file
   end
